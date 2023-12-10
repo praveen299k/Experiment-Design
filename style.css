@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+#main {
+  height: 100%;
+}
+
+nav.upper {
+  height: 60px;
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+}
+
+.nav-logo .box {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+nav.upper .nav-items {
+  display: flex;
+  gap: 40px;
+}
+
+nav.upper .ru {
+  color: rgb(32, 31, 31);
+}
+
+nav.lower {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  height: 60px;
+  font-size: 20px;
+  gap: 70px;
+}
+
+#content {
+  height: calc(100% - 120px);
+}
+
+#main-info {
+  height: 45%;
+  display: flex;
+  overflow-x: auto;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#main-info::-webkit-scrollbar {
+  background: transparent;
+  height: 5px;
+}
+
+#main-info::-webkit-scrollbar-thumb {
+  background-color: orangered;
+}
+
+#main-info .element {
+  flex-shrink: 0;
+  width: 1200px;
+  height: auto;
+  text-align: center;
+}
+
+#main-info h2 {
+  font-size: 125px;
+  font-weight: 400;
+}
+
+.img-section {
+  display: flex;
+  overflow-x: auto;
+  height: calc(100% - 45%);
+}
+
+.img-section::-webkit-scrollbar {
+  background: transparent;
+  height: 0;
+}
+
+.img-section img {
+  width: 100vw;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: 0 20%;
+}
